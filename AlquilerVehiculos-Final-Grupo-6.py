@@ -1,10 +1,10 @@
 # TP Final - Alquiler de Vehículos
-# Apellidos: Franco Martínez y Benjamín Martínez
+# Integrantes: Franco Martínez y Benjamín Martínez
 # Comisión: 1
 # Repositorio: https://github.com/Fr4ncos7/TP-Final-Alquiler-Vehiculos-Martinez-Martinez.git
 
 print("Seleccione la opción que coincida con usted:")
-print("Elija 1, 2 ó 3 ")
+print("Elija 1, 2 o 3")
 print("")
 print("1. Local")
 print("2. Turista nacional")
@@ -19,7 +19,7 @@ while not ingreso_completo:
         if origen in [1, 2, 3]:
             ingreso_completo = True
         else:
-            print("Solo puede elejir 1, 2, o 3")
+            print("Solo puede elegir 1, 2 o 3")
     except ValueError:
         print("Solo se pueden ingresar datos numéricos.")
 
@@ -32,7 +32,7 @@ while not ingreso_completo:
         if edad in range(1, 100):
             ingreso_completo = True
         else:
-            print("Solo puede elejir un número entre 1 y 99")
+            print("Solo puede elegir un número entre 1 y 99")
     except ValueError:
         print("Solo se pueden ingresar datos numéricos.")
 
@@ -48,7 +48,7 @@ if edad >= 25:
             if tiene_licencia in [1, 2]:
                 ingreso_completo = True
             else:
-                print("Solo puede elejir 1 o 2")
+                print("Solo puede elegir 1 o 2")
         except ValueError:
             print("Solo se pueden ingresar datos numéricos.")
 
@@ -56,7 +56,7 @@ if edad >= 25:
     if tiene_licencia==1:
         print("Puede continuar con el proceso de alquiler.")
         if origen==3:
-            print("Para registrarse ingrese su pasaporte:")
+            print("Para registrarse, ingrese su pasaporte:")
             ingreso_completo = False
             while not ingreso_completo:
                 try:
@@ -119,7 +119,7 @@ if edad >= 25:
                 if vip in [1, 2]:
                     ingreso_completo = True
                 else:
-                    print("Solo puede elejir 1, o 2")
+                    print("Solo puede elegir 1 o 2")
             except ValueError:
                 print("Solo se pueden ingresar datos numéricos.")
         
@@ -133,7 +133,7 @@ if edad >= 25:
                     if id_vip in range(1000, 9999):
                         ingreso_completo = True
                     else:
-                        print("Solo puede ingresar 4 digitos sin signos")
+                        print("Solo puede ingresar 4 dígitos sin signos")
                 except ValueError:
                     print("Solo se pueden ingresar datos numéricos.")
 
@@ -152,7 +152,7 @@ if edad >= 25:
                     if forma_pago in [1, 2, 3, 4]:
                         ingreso_completo = True
                     else:
-                        print("Solo puede elejir 1, 2, 3 o 4")
+                        print("Solo puede elegir 1, 2, 3 o 4")
                 except ValueError:
                     print("Solo se pueden ingresar datos numéricos.")
 
@@ -160,7 +160,7 @@ if edad >= 25:
             print("¿Cómo conoció la agencia?")
             print("1. Recomendación")
             print("2. Redes sociales")
-            print("3. Búsqueda en Internet")
+            print("3. Búsqueda en internet")
             print("4. Publicidad en la calle")
             print("--------------------------------------------------")
             ingreso_completo = False
@@ -170,7 +170,7 @@ if edad >= 25:
                     if conoce_agencia in [1, 2, 3, 4]:
                         ingreso_completo = True
                     else:
-                        print("Solo puede elejir 1, 2, 3 o 4")
+                        print("Solo puede elegir 1, 2, 3 o 4")
                 except ValueError:
                     print("Solo se pueden ingresar datos numéricos.")
 
@@ -183,7 +183,7 @@ if edad >= 25:
                 if en_bariloche in [1, 2]:
                     ingreso_completo = True
                 else:
-                    print("Solo puede elejir 1, o 2")
+                    print("Solo puede elegir 1 o 2")
             except ValueError:
                 print("Solo se pueden ingresar datos numéricos.")
 
@@ -198,7 +198,7 @@ if edad >= 25:
                     if tipo_terreno in [1, 2]:
                         ingreso_completo = True
                     else:
-                        print("Solo puede elejir 1, o 2")
+                        print("Solo puede elegir 1 o 2")
                 except ValueError:
                     print("Solo se pueden ingresar datos numéricos.")
 
@@ -217,7 +217,7 @@ if edad >= 25:
                         if opcion_vehiculo in [1, 2]:
                             ingreso_completo = True
                         else:
-                            print("Solo puede elejir 1, o 2")
+                            print("Solo puede elegir 1 o 2")
                     except ValueError:
                         print("Solo se pueden ingresar datos numéricos.")
 
@@ -234,7 +234,7 @@ if edad >= 25:
                         if equip_invierno in [1, 2]:
                             ingreso_completo = True
                         else:
-                            print("Solo puede elejir 1, o 2")
+                            print("Solo puede elegir 1 o 2")
                     except ValueError:
                         print("Solo se pueden ingresar datos numéricos.")
 
@@ -250,7 +250,7 @@ if edad >= 25:
                     if opcion_vehiculo in [1, 2]:
                         ingreso_completo = True
                     else:
-                        print("Solo puede elejir 1, o 2")
+                        print("Solo puede elegir 1 o 2")
                 except ValueError:
                     print("Solo se pueden ingresar datos numéricos.")
 
@@ -272,14 +272,14 @@ if edad >= 25:
                 if tipo_tarifa in [1, 2, 3, 4]:
                     ingreso_completo = True
                 else:
-                    print("Solo puede elejir 1, 2, 3 o 4")
+                    print("Solo puede elegir 1, 2, 3 o 4")
             except ValueError:
                 print("Solo se pueden ingresar datos numéricos.")
 
         print("--------------------------------------------------")
-        print("Es temporada alta?:")
-        print("1. si")
-        print("2. no")
+        print("¿Es temporada alta?")
+        print("1. Sí")
+        print("2. No")
         ingreso_completo = False
         while not ingreso_completo:
             try:
@@ -287,13 +287,13 @@ if edad >= 25:
                 if temporada_alta in [1, 2]:
                     ingreso_completo = True
                 else:
-                    print("Solo puede elejir 1, o 2")
+                    print("Solo puede elegir 1 o 2")
             except ValueError:
                 print("Solo se pueden ingresar datos numéricos.")
         
         print("--------------------------------------------------")
         total_seguros = 0
-        print("Se ha incluido el seguro obligatorio de la Comisión Nacinal de Seguro.")
+        print("Se ha incluido el seguro obligatorio de la Comisión Nacional de Seguros.")
         print("Importe: $5000")
         total_seguros = total_seguros+5000
 
@@ -340,6 +340,6 @@ if edad >= 25:
         print("La factura fue enviada al cliente y archivada en el sistema.")
         print("-----------------------------------")
     else:
-        print(("Tiene que tener licencia"))
+        print("Tiene que tener licencia")
 else:
-    print(("Tiene que ser mayor de 25 años"))
+    print("Tiene que ser mayor de 25 años")
